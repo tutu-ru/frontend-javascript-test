@@ -24,7 +24,7 @@
 
 Сервер возвращает JSON-массив данных.
 Пример данных: 
-<script>
+```
 [
 	{
 		id: 101,
@@ -41,7 +41,7 @@
 		description: "et lacus magna dolor..."
 	}
 }
-</script>
+```
 
 Маленький объем данных берется по ссылке
 http://www.filltext.com/?rows=32&id={number|1000}&firstName={firstName}&lastName={lastName}&email={email}&phone={phone|(xxx)xxx-xx-xx}&adress={addressObject}&description={lorem|32}
@@ -76,6 +76,7 @@ http://www.filltext.com/?rows=1000&id={number|1000}&firstName={firstName}&delay=
 
 Если выбран пользователем с id = 101 , то под таблице выводим следующую информацию:
 
+```
 Выбран пользователь Sue Corson
 Описание:
 	et lacus magna dolor...
@@ -84,7 +85,7 @@ http://www.filltext.com/?rows=1000&id={number|1000}&firstName={firstName}&delay=
 Город: Waukesha
 Провинция/штат: WI
 Индекс: 22178
-
+```
 
 Расскажите нам, как вы тестировали результат своей работы. Какие используете инструменты и как вы осуществляете тестирование.
 
