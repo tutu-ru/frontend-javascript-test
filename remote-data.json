@@ -7,7 +7,7 @@
       "http://cdn2.tu-tu.ru/image/tours_hotel_card/1/2dd5a59a6617aa59c92b8fd18bbc156e/"
     ]
   },
-  "priceFrom": 25000,
+  "priceFrom": "25000",
 }, {
   "country": {
     "name": "Греция",
@@ -17,7 +17,7 @@
       "http://cdn2.tu-tu.ru/image/tours_hotel_card/2/fd80e534cfe48ac2aaa23b305f728934/"
     ]
   },
-  "priceFrom": 32000,
+  "priceFrom": "32000",
 }, {
   "country": {
     "name": "Крым",
@@ -27,5 +27,5 @@
       "http://cdn2.tu-tu.ru/image/tours_resort/2/58ff5c6bebe64e66eb0c2e65c80c0912/"
     ]
   },
-  "priceFrom": 5000,
+  "priceFrom": "5000",
 }]
