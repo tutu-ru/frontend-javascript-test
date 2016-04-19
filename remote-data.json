@@ -1,31 +1,31 @@
 [{
-  country: {
-    name: 'Таиланд',
-    photos: [
-      'http://cdn1.tu-tu.ru/images2/bemp/blocks/tours/country/card_big/th.jpg',
-      'http://cdn2.tu-tu.ru/image/tours_hotel_card/4/4a4a6e805f69a6c4ef627990cdef157d/',
-      'http://cdn2.tu-tu.ru/image/tours_hotel_card/1/2dd5a59a6617aa59c92b8fd18bbc156e/'
+  "country": {
+    "name": "Таиланд",
+    "photos": [
+      "http://cdn1.tu-tu.ru/images2/bemp/blocks/tours/country/card_big/th.jpg",
+      "http://cdn2.tu-tu.ru/image/tours_hotel_card/4/4a4a6e805f69a6c4ef627990cdef157d/",
+      "http://cdn2.tu-tu.ru/image/tours_hotel_card/1/2dd5a59a6617aa59c92b8fd18bbc156e/"
     ]
   },
-  priceFrom: 25000,
+  "priceFrom": 25000,
 }, {
-  country: {
-    name: 'Греция',
-    photos: [
-      'http://cdn1.tu-tu.ru/images2/bemp/blocks/tours/country/card_big/gr.jpg',
-      'http://cdn2.tu-tu.ru/image/tours_hotel_card/2/cf257a5b54c0a6d70ae6af114a7ae318/',
-      'http://cdn2.tu-tu.ru/image/tours_hotel_card/2/fd80e534cfe48ac2aaa23b305f728934/'
+  "country": {
+    "name": "Греция",
+    "photos": [
+      "http://cdn1.tu-tu.ru/images2/bemp/blocks/tours/country/card_big/gr.jpg",
+      "http://cdn2.tu-tu.ru/image/tours_hotel_card/2/cf257a5b54c0a6d70ae6af114a7ae318/",
+      "http://cdn2.tu-tu.ru/image/tours_hotel_card/2/fd80e534cfe48ac2aaa23b305f728934/"
     ]
   },
-  priceFrom: 32000,
+  "priceFrom": 32000,
 }, {
-  country: {
-    name: 'Крым',
-    photos: [
-      'http://cdn2.tu-tu.ru/image/tours_resort/2/db87c7bf2651f48c84ffa62cf6db835e/',
-      'http://cdn2.tu-tu.ru/image/tours_resort/2/549085fd3b2b1cdffbdccd5bfe41eb11/',
-      'http://cdn2.tu-tu.ru/image/tours_resort/2/58ff5c6bebe64e66eb0c2e65c80c0912/'
+  "country": {
+    "name": "Крым",
+    "photos": [
+      "http://cdn2.tu-tu.ru/image/tours_resort/2/db87c7bf2651f48c84ffa62cf6db835e/",
+      "http://cdn2.tu-tu.ru/image/tours_resort/2/549085fd3b2b1cdffbdccd5bfe41eb11/",
+      "http://cdn2.tu-tu.ru/image/tours_resort/2/58ff5c6bebe64e66eb0c2e65c80c0912/"
     ]
   },
-  priceFrom: 5000,
+  "priceFrom": 5000,
 }]
