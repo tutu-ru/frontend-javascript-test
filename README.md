@@ -12,43 +12,42 @@ Fuzbuz задачи
 Функция должна пройти следующие тесты, как минимум:
 
 ```
-    "use strict";
-    console.clear();
+console.clear();
     
-    (w => {
-        // Yor code here ...
-        Ваш код реализации функции dscount
-        // ... //
-    
-    
-        // Для удобства можно использовать эти тесты:
-        try {
-            test(dscount, ['ab___ab__', 'a', 'b'], 2);
-            test(dscount, ['___cd____', 'c', 'd'], 1);
-            test(dscount, ['de_______', 'd', 'e'], 1);
-            test(dscount, ['12_12__12', '1', '2'], 3);
-            test(dscount, ['_ba______', 'a', 'b'], 0);
-            test(dscount, ['_a__b____', 'a', 'b'], 0);
-            test(dscount, ['-ab-аb-ab', 'a', 'b'], 2);
-    
-            console.info("Congratulations! All tests success passed.");
-        } catch(e) {
-            console.error(e);
-        }
-    
-        // Простая функция тестирования
-        function test(call, args, count, n) {
-            let r = (call.apply(n, args) === count);
-            console.assert(r, `Finded items count: ${count}`);
-            if (!r) throw "Test failed!";
-        }
-    
-        return '--- End ---';
-    })(window);
+{
+	// Yor code here ...
+	Ваш код реализации функции dscount
+	// ... //
+
+	
+	// Для удобства можно использовать эти тесты (обязательны для прохождения):
+	try {
+	    test(dscount, ['ab___ab__', 'a', 'b'], 2);
+	    test(dscount, ['___cd____', 'c', 'd'], 1);
+	    test(dscount, ['de_______', 'd', 'e'], 1);
+	    test(dscount, ['12_12__12', '1', '2'], 3);
+	    test(dscount, ['_ba______', 'a', 'b'], 0);
+	    test(dscount, ['_a__b____', 'a', 'b'], 0);
+	    test(dscount, ['-ab-аb-ab', 'a', 'b'], 2);
+	
+	    console.info("Congratulations! All tests success passed.");
+	} catch(e) {
+	    console.error(e);
+	}
+	
+	// Простая функция тестирования
+	function test(call, args, count, n) {
+	    let r = (call.apply(n, args) === count);
+	    console.assert(r, `Finded items count: ${count}`);
+	    if (!r) throw "Test failed!";
+	}
+	
+}
+
+'--- run script ---';
 ```
 
-Данный для примера и не обязателен к использованию в таком виде. Можно вносить модификации.
-Приведенный пример кода работает в последних версиях Google Chrome и Chromium.
+Данный код для примера и не обязателен к использованию в таком виде. Можно вносить модификации и переписывать так, как считаете оптимальным. Приведенный пример кода работает в последних версиях Google Chrome и Chromium.
 Его можно запустить через `DevTools -> Sources -> Snippets`
 
 ![example](https://img-fotki.yandex.ru/get/3705/9330072.e/0_14f176_be7d3616_XL.png)
