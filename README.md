@@ -153,9 +153,39 @@ function func(s, a, b) {
 }
 ```
 
-Что можно внем улучшить? Как бы вы его переписали?
+Что можно улучшить? Как бы вы его переписали?
 
 ## Задача №2
+```html
+<div></div>
+<script>
+function drawRating(vote) {
+	if (vote >= 0 && vote <= 20) {
+    	return '★☆☆☆☆';
+	}
+	else if (vote > 20 && vote <= 40) {
+		return '★★☆☆☆';
+	}
+	else if (vote > 40 && vote <= 60) {
+		return '★★★☆☆';
+	}
+	else if (vote > 60 && vote <= 80) {
+		return '★★★★☆';
+	}
+	else if (vote > 80 && vote <= 100) {
+		return '★★★★★';
+	}
+}
+
+// Проверка работы результата
+setInterval(function(){
+	var vote = Math.round(Math.random() * 100);
+	document.querySelector('div').innerHTML = drawRating(vote);
+}, 1000);
+</script>
+```
+
+Что можно улучшить? Как бы вы переписали функцию `drawRating` (интересует именно логика)?
 
 
 ----
