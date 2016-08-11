@@ -63,11 +63,11 @@ function test(call, args, count, n) {
 Идеальное время решения на задачу не более 30 минут (задачу можно решить и за 10 минут).
 
 Покажите решение, если нужно проверять следующий набор скобок:
-`<>,[],{},()`
+`<,[,{,(`
 
 
 Изменится ли ваше решение, если нужно проверять только такой набор скобок:
-`<>,[],{}`
+`<,[,{`
 
 - В случае ошибки возвращаем 1.
 - В остальных случаех возвращаем 0.
@@ -156,9 +156,7 @@ function func(s, a, b) {
 Что можно улучшить? Как бы вы его переписали?
 
 ## Задача №2
-```html
-<div></div>
-<script>
+```js
 function drawRating(vote) {
 	if (vote >= 0 && vote <= 20) {
     	return '★☆☆☆☆';
@@ -178,11 +176,9 @@ function drawRating(vote) {
 }
 
 // Проверка работы результата
-setInterval(function(){
-	var vote = Math.round(Math.random() * 100);
-	document.querySelector('div').innerHTML = drawRating(vote);
-}, 1000);
-</script>
+console.log(drawRating(1) ); // ★☆☆☆☆
+console.log(drawRating(50)); // ★★★☆☆
+console.log(drawRating(99)); // ★★★★★
 ```
 
 Что можно улучшить? Как бы вы переписали функцию `drawRating` при условии что на вход функции `drawRating` должна приходить переменная vote, содержащая значение от 0 до 100. Интересует именно логика реализации функции, не визуальное отображение звезд.
@@ -193,6 +189,27 @@ setInterval(function(){
 # Практические задачи
 
 ## Задача №1
+Реализуйте функцию `parseUrl(string)`, которая будет парсить URL строку и возвращать объект с распарсенными данными.
+Пример:
+
+```js
+let a = parseUrl('http://tutu.ru:8080/do/any.php?a=1&b[]=a&b[]=b#foo')
+
+// Вернет объект, в котором будут следующие свойства:
+console.log( a.href == "http://tutu.ru:8080/do/any.php?a=1&b[]=a&b[]=b#foo" )
+console.log( a.hash == "#foo" )
+console.log( a.port == "8080" )
+console.log( a.host == "tutu.ru" )
+console.log( a.protocol == "https:" )
+console.log( a.hostname == "tutu.ru" )
+console.log( a.pathname == "/do/any.php" )
+console.log( a.origin == "http://tutu.ru" )
+```
+Желательно задачу решить как можно меньшим числом строк кода и затратив на реализацию минимум времени.
+Подсказка: JS-ninja может решить эту задачу за 1 минуту и написать 1 строчку кода. Дерзайте =)
+
+
+## Задача №2
 
 Необходимо разработать javascript-компонент для сортировки таблиц с данными.
 
