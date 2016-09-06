@@ -171,6 +171,7 @@ function drawRating(vote) {
 }
 
 // Проверка работы результата
+console.log(drawRating(0) ); // ★☆☆☆☆
 console.log(drawRating(1) ); // ★☆☆☆☆
 console.log(drawRating(50)); // ★★★☆☆
 console.log(drawRating(99)); // ★★★★★
@@ -194,11 +195,11 @@ let a = parseUrl('http://tutu.ru:8080/do/any.php?a=1&b[]=a&b[]=b#foo')
 console.log( a.href == "http://tutu.ru:8080/do/any.php?a=1&b[]=a&b[]=b#foo" )
 console.log( a.hash == "#foo" )
 console.log( a.port == "8080" )
-console.log( a.host == "tutu.ru" )
-console.log( a.protocol == "https:" )
+console.log( a.host == "tutu.ru:8080" )
+console.log( a.protocol == "http:" )
 console.log( a.hostname == "tutu.ru" )
 console.log( a.pathname == "/do/any.php" )
-console.log( a.origin == "http://tutu.ru" )
+console.log( a.origin == "http://tutu.ru:8080" )
 ```
 Желательно задачу решить как можно меньшим числом строк кода и затратив на реализацию минимум времени.
 Подсказка: JS-ninja может решить эту задачу за 1 минуту и написать 1 строчку кода. Дерзайте =)
